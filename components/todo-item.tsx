@@ -41,8 +41,8 @@ export function TodoCard({
                         disabled={pending}
                         checked={Boolean(checked)}
                         onCheckedChange={async (val) => {
-                            if (val === "inderteminate") return;
-                            setChecked(val)
+                            if (val === "indeterminate") return;
+                            setChecked(val);
                             await updateTodo({ ...todo, is_complete: val });
                         }}
                     />
